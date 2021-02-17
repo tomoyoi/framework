@@ -1,5 +1,10 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+    <div>
+      <router-view/>
+    </div>
+    <v-card>
+      aaa
+    </v-card>
+  </v-app>
 </template>
