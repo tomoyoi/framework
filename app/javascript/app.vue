@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="inspire">
     <v-card class="overflow-hidden" color="basil">
       <v-app-bar
         absolute
@@ -29,7 +29,7 @@
           <v-img
             max-height="70"
             max-width="70"
-            src="assets/tomoyo.png"
+            src="assets/tomoyo"
           ></v-img>
         </a>
 
@@ -59,18 +59,21 @@
       <v-sheet
         id="scrolling-techniques-4"
         class="overflow-y-auto"
-        max-height="600"
+        max-height="700"
       >
-        <v-container style="height: 1000px"></v-container>
+        <v-container style="height: 1400px">
+          <router-view />
+          <Service />
+        </v-container>
       </v-sheet>
     </v-card>
-    <div>
-      <router-view />
-    </div>
   </v-app>
 </template>
 <script>
 export default {
+  components: {
+    Service: () => import("service")
+  },
   data: () => ({
     items: [
       { title: "About" },
@@ -81,3 +84,8 @@ export default {
   }),
 };
 </script>
+<style scope>
+#inspire {
+  height: 1400px;
+}
+</style>
