@@ -1,9 +1,19 @@
 class Api::V1::ContactsController < ApiController
-  def index
-    contacts = Contact.all
+  def show
+    contacts = Contact.find(id)
   end
 
-  def show
-    contact = Contact.find(id)
+  def create
+    Contact.create(contact_params)
+  end
+
+private
+  def contact_params
+    params.require(:contact).permit(
+      :name,
+      :tel,
+      :email,
+      :message
+    )
   end
 end

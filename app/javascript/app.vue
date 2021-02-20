@@ -64,6 +64,7 @@
         <v-container style="height: 1400px">
           <router-view />
           <Service />
+          <Contact />
         </v-container>
       </v-sheet>
     </v-card>
@@ -72,7 +73,8 @@
 <script>
 export default {
   components: {
-    Service: () => import("service")
+    Service: () => import("service"),
+    Contact: () => import("contact")
   },
   data: () => ({
     items: [

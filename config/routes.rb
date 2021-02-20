@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :owners, only: :index
       resources :services, only: [:index, :show, :create, :update, :destroy]
       resources :works, only: [:index, :show, :create, :update, :destroy]
-      resources :contacts, only: [:index, :show]
+      resources :contacts, only: [:show, :create]
     end
   end
 end
