@@ -1,7 +1,6 @@
 class Api::V1::ServicesController < ApiController
   def index
     services = Service.select(:title, :description)
-    Rails.logger.info "######### #{services.inspect}"
     render json: services
   end
 

@@ -66,6 +66,14 @@ export default {
     };
   },
   methods: {
+    showSnackBar(color, message) {
+      this.snackBar.message = message;
+      this.snackBar.color = color;
+      this.snackBar.show = true;
+    },
+    formReset () {
+      this.$refs.form.reset();
+    },
     createContact() {
       const header = {
         "Content-Type": "application/json",
@@ -92,15 +100,7 @@ export default {
         .finally(() => {
           this.contactForm.loading = false;
         });
-    },
-  },
-  showSnackBar: function (color, message) {
-    this.snackBar.message = message;
-    this.snackBar.color = color;
-    this.snackBar.show = true;
-  },
-  formReset: function () {
-    this.$refs.form.reset();
+    }
   },
 };
 </script>
