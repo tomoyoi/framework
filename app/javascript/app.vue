@@ -62,8 +62,8 @@
         max-height="700"
       >
         <v-container style="height: 1400px">
-          <router-view />
           <Service />
+          <About />
           <Contact />
         </v-container>
       </v-sheet>
@@ -73,6 +73,7 @@
 <script>
 export default {
   components: {
+    About: () => import("about"),
     Service: () => import("service"),
     Contact: () => import("contact")
   },

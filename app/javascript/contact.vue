@@ -1,31 +1,41 @@
 <template>
-  <div>
-    <p mt-10>Profile</p>
-    <v-card flat>
+  <div align="center">
+    <v-card flat max-width="50%">
+      <p>Contact</p>
+      <p class="small">
+        制作の依頼・ご相談などお気軽にお問い合わせくださいませ！
+      </p>
       <v-container>
-        <h2>お問い合わせ</h2>
         <v-form ref="form">
           <v-text-field
             v-model="contactForm.name"
+            outlined
             label="名前"
             required
           ></v-text-field>
           <v-text-field
             v-model="contactForm.email"
+            outlined
             label="メールアドレス"
             required
           ></v-text-field>
           <v-text-field
             v-model="contactForm.tel"
+            outlined
             label="電話番号"
           ></v-text-field>
-          <v-textarea v-model="contactForm.message" label="内容"></v-textarea>
+          <v-textarea
+            v-model="contactForm.message"
+            outlined
+            no-resize
+            placeholder="お問い合わせ内容"
+          ></v-textarea>
           <v-btn
             :loading="contactForm.loading"
             @click="createContact()"
             block
             large
-            color="info"
+            color="secondary"
             class="mt-4 font-weight-bold"
             >送信
           </v-btn>
@@ -71,7 +81,7 @@ export default {
       this.snackBar.color = color;
       this.snackBar.show = true;
     },
-    formReset () {
+    formReset() {
       this.$refs.form.reset();
     },
     createContact() {
@@ -100,15 +110,17 @@ export default {
         .finally(() => {
           this.contactForm.loading = false;
         });
-    }
+    },
   },
 };
 </script>
 
 <style scoped>
 p {
-  margin-top: 250px;
   font-size: 2em;
   text-align: center;
+}
+.small {
+  font-size: 14px;
 }
 </style>

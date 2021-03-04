@@ -1,12 +1,26 @@
 <template>
   <div>
     <p mt-10>Service</p>
-    <v-card flat>
-      <v-row v-for="i in services" :key="i.id">
-        <v-col> {{ i.title }}
-          {{ i.description }}</v-col>
+    <v-container fluid>
+      <v-row>
+        <v-col v-for="i in services" :key="i.id">
+          <v-card>
+            <v-img
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
+              src="assets/tomoyo"
+            ></v-img>
+            <v-card-title class="justify-center"
+              ><div>{{ i.title }}</div></v-card-title
+            >
+            <v-card-text class="text--primary"
+              ><div>{{ i.description }}</div></v-card-text
+            >
+          </v-card>
+        </v-col>
       </v-row>
-    </v-card>
+    </v-container>
   </div>
 </template>
 
