@@ -5,12 +5,13 @@
       <v-row>
         <v-col v-for="i in services" :key="i.id">
           <v-card>
-            <v-img
-              class="white--text align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              height="200px"
-              src="assets/tomoyo"
-            ></v-img>
+          <v-img
+            class="white--text align-end"
+            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+            height="200px"
+            max-width="300px"
+            :src="i.image"
+          ></v-img>
             <v-card-title class="justify-center"
               ><div>{{ i.title }}</div></v-card-title
             >
