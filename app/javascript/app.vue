@@ -12,7 +12,7 @@
       <v-menu bottom left>
           <template v-slot:activator="{ on, attrs }">
             <v-btn icon v-bind="attrs" v-on="on">
-              <v-icon>mdi-dots-vertical</v-icon>
+              <!-- <v-icon>mdi-dots-vertical</v-icon> -->
             </v-btn>
           </template>
 
@@ -37,7 +37,7 @@
 
 
         <v-btn icon>
-          <v-icon>mdi-heart</v-icon>
+          <!-- <v-icon>mdi-heart</v-icon> -->
         </v-btn>
 
 
