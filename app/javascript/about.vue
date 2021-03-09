@@ -1,18 +1,13 @@
 <template>
   <div>
-    <p>Profile</p>
+    <p class="padding-30">Profile</p>
     <v-row>
       <v-col sm="4">
         <v-img class="rounded-circle" src="assets/profile"></v-img>
       </v-col>
-      <v-col sm="8">
-        <span class="my-10" v-html="about.comment"></span>
-      </v-col>
-      <v-col sm="8">
-        <span class="mail-margin font-weight-bold">メールアドレス：</span><span>{{ about.email }}</span>
-        <v-spacer />
-        <span class="mb-10 font-weight-bold">住所：</span><span>{{ about.address }}</span>
-        <v-spacer />
+      <v-col sm="1"></v-col>
+      <v-col sm="7">
+        <span v-html="about.comment"></span>
       </v-col>
     </v-row>
   </div>
@@ -39,8 +34,10 @@ export default {
 p {
   font-size: 2em;
   text-align: center;
+  margin-top: 150px;
+
 }
-.mail-margin {
-  padding-top: 50px;
+.padding-30 {
+  padding-bottom: 30px;
 }
 </style>
