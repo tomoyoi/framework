@@ -1,6 +1,7 @@
 class Api::V1::OwnersController < ApiController
   def index
-    about = Owner.select(:name, :email, :address, :comment)
+    about = Owner.first
+    ActionController::Base.helpers.sanitize(about.comment)
     render json: about
   end
 end
