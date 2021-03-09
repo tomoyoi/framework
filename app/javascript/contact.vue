@@ -1,7 +1,7 @@
 <template>
   <div align="center">
     <v-card flat max-width="50%">
-      <p>Contact</p>
+      <p class="margin-150">Contact</p>
       <p class="small">
         制作の依頼・ご相談などお気軽にお問い合わせくださいませ！
       </p>
@@ -122,5 +122,9 @@ p {
 }
 .small {
   font-size: 14px;
+}
+.margin-150 {
+  margin: 150px 0 30px 0;
+
 }
 </style>
