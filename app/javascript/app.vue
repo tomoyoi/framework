@@ -29,7 +29,18 @@
         <v-container style="height: 1000px;">
           <Service />
           <About />
-          <Contact />
+          <div class="padding-80 text-center">
+            <v-btn
+              rounded
+              block
+              x-large
+              class="mx-10 white--text"
+              color="blue-grey"
+              :to="{ name: 'contact' }"
+            >
+              Contact
+            </v-btn>
+          </div>
         </v-container>
       </v-sheet>
     </v-card>
@@ -50,4 +61,7 @@ export default {
 };
 </script>
 <style scope>
+.padding-80 {
+  padding: 80px 0;
+}
 </style>
