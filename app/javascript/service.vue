@@ -1,17 +1,19 @@
 <template>
   <div>
-    <p mt-10>Service</p>
+    <p class="margin-170">Grow with your creativity</p>
+    <p>頭の中のアイディアを形にします</p>
+    <p class="margin-120">Service</p>
     <v-container fluid style="min-height: 434px">
       <v-row>
         <v-col cols="6" v-for="i in services" :key="i.id">
           <v-card>
-          <v-img
-            :src="i.image"
-          ></v-img>
-            <v-card-title class="justify-center"
-              ><div>{{ i.title }}</div></v-card-title
+            <v-card-title class="headline font-weight-bold justify-center"
+              >{{ i.title }}</v-card-title
             >
-            <v-card-text class="text--primary text-center"
+            <v-img
+              :src="i.image"
+            ></v-img>
+            <v-card-text class="font-weight-bold text--primary text-center"
               >{{ i.description }}</v-card-text
             >
           </v-card>
@@ -39,9 +41,15 @@ export default {
 </script>
 
 <style scoped>
-p {
-  margin-top: 250px;
+.margin-170 {
+  margin-top: 170px;
   font-size: 2em;
+}
+.margin-120 {
+  margin-top: 120px;
+  font-size: 2em;
+}
+p {
   text-align: center;
 }
 </style>

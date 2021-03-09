@@ -3,7 +3,7 @@
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
-        color="#d6eae9"
+        color="#f9f0f1"
         dark
         shrink-on-scroll
         prominent
@@ -21,7 +21,6 @@
           ></v-img>
         </a>
         <v-spacer></v-spacer>
-
       </v-app-bar>
       <v-sheet
         id="scrolling-techniques"
