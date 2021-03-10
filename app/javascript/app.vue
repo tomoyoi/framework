@@ -10,8 +10,6 @@
         elevate-on-scroll
         scroll-target="#scrolling-techniques"
       >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
         <v-divider />
         <a ref="/">
           <v-img max-height="70" max-width="70" src="assets/tomoyo"></v-img>
