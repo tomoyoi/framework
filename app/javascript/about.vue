@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p class="padding-30">Profile</p>
+    <p class="margin-120">Profile</p>
     <v-row>
       <v-col sm="4">
         <v-img class="rounded-circle" src="assets/profile"></v-img>
       </v-col>
       <v-col sm="1"></v-col>
-      <v-col sm="7">
+      <v-col class="text-left" sm="7">
         <span v-html="about.comment"></span>
       </v-col>
     </v-row>
@@ -31,11 +31,9 @@ export default {
 </script>
 
 <style scoped>
-p {
+.margin-120 {
+  margin-top: 120px;
   font-size: 2em;
-  text-align: center;
-  margin-top: 150px;
-
 }
 .padding-30 {
   padding-bottom: 30px;
