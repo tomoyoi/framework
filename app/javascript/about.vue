@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p class="margin-120">Profile</p>
+  <div class="margin-150">
+    <p class="text-center margin-120">Profile</p>
     <v-row>
       <v-col sm="4">
         <v-img class="rounded-circle" src="assets/profile"></v-img>
@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style scoped>
+.margin-150 {
+  margin-top: 150px;
+}
 .margin-120 {
   margin-top: 120px;
   font-size: 2em;
