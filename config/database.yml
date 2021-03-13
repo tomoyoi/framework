@@ -32,4 +32,4 @@ production:
   <<: *default
   database: framework_production
   username: root
-  password: <%= ENV['FRAMEWORK_DATABASE_PASSWORD'] %>
+  password:
