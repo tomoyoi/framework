@@ -8,15 +8,13 @@
       <v-row>
         <v-col cols="6" v-for="i in services" :key="i.id">
           <v-card>
-            <v-card-title class="headline font-weight-bold justify-center"
-              >{{ i.title }}</v-card-title
-            >
-            <v-img
-              :src="i.image"
-            ></v-img>
-            <v-card-text class="font-weight-bold text--primary text-center"
-              >{{ i.description }}</v-card-text
-            >
+            <v-card-title class="headline font-weight-bold justify-center">{{
+              i.title
+            }}</v-card-title>
+            <v-img :src="i.image"></v-img>
+            <v-card-text class="font-weight-bold text--primary text-center">{{
+              i.description
+            }}</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -27,11 +25,19 @@
 <script>
 import axios from "axios";
 import idea from "../assets/images/idea.jpg";
+import coding from "../assets/images/coding.jpg";
+import design from "../assets/images/design.jpg";
+import management from "../assets/images/management.jpg";
+import planning from "../assets/images/planning.jpg";
 
 export default {
   data: function () {
     return {
       idea,
+      coding,
+      design,
+      management,
+      planning,
       services: [],
     };
   },
