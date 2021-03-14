@@ -11,7 +11,7 @@
       >
         <v-divider />
         <a ref="/">
-          <v-img max-height="70" max-width="70" :src="tomoyo"></v-img>
+          <v-img max-height="100" max-width="100" :src="tomoyo"></v-img>
         </a>
         <v-spacer></v-spacer>
         <template v-slot:extension>
@@ -31,8 +31,8 @@
           </v-tabs>
         </template>
       </v-app-bar>
-      <v-sheet id="scrolling-techniques" class="overflow-y-auto">
-        <v-container style="height: 1000px">
+      <v-sheet id="scrolling-techniques" class="overflow-y-auto" style="height: 1200px;">
+        <v-container style="height: 500px;">
           <div class="padding-80">
             <router-view></router-view>
           </div>
