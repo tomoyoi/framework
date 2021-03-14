@@ -1,6 +1,6 @@
 <template>
   <div class="padding-80 text-center">
-    <div style="background-image: url('img_girl.jpg')">
+    <div>
       <p class="margin-170">Grow your creativity</p>
       <p>頭の中のそのアイディア、かたちにします！</p>
       <v-img :src="idea"></v-img>
