@@ -12,17 +12,17 @@ export default new Router({
       component: () => import("../../home"),
     },
     {
-      path: "about",
+      path: "/about",
       name: "about",
       component: () => import("../../about"),
     },
     {
-      path: "service",
+      path: "/service",
       name: "service",
       component: () => import("../../service"),
     },
     {
-      path: "contact",
+      path: "/contact",
       name: "contact",
       component: () => import("../../contact"),
     },

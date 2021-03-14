@@ -29,8 +29,8 @@
               v-for="i in items"
               :key="i.id"
               :to="{ name: i }"
-              >{{ i }}</v-tab
-            >
+              >{{ i }}
+            </v-tab>
           </v-tabs>
         </template>
       </v-app-bar>

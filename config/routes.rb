@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
+  get '/about',   to: 'home#index'
+  get '/contact', to: 'home#index'
+  get '/service', to: 'home#index'
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
