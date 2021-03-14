@@ -48,19 +48,10 @@ export default {
   data: function () {
     return {
       tomoyo,
-      services: [],
       about: [],
       items: ["about", "service", "contact"],
       model: "tab-2",
     };
-  },
-  mounted() {
-    axios
-      .get("/api/v1/services")
-      .then((response) => (this.services = response.data));
-    axios
-      .get("/api/v1/owners")
-      .then((response) => (this.about = response.data));
   },
 };
 </script>

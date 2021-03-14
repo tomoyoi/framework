@@ -8,6 +8,7 @@
       <v-container fluid style="min-height: 434px">
         <v-row>
           <v-col cols="6" v-for="i in services" :key="i.id">
+            <div>{{i.id}}</div>
             <v-card>
               <v-card-title class="headline font-weight-bold justify-center">{{
                 i.title
