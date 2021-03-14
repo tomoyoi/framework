@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-    <v-card class="overflow-hidden" color="basil">
+    <v-card class="overflow-hidden">
       <v-app-bar
         absolute
         dark

@@ -1,7 +1,8 @@
 <template>
   <div>
-    <p class="margin-170">Grow with your creativity</p>
-    <p>頭の中のアイディアを形にします</p>
+    <p class="margin-170">Grow your creativity</p>
+    <p>頭の中のそのアイディア、かたちにします！</p>
+    <v-img :src="idea"></v-img>
     <p class="margin-120">Service</p>
     <v-container fluid style="min-height: 434px">
       <v-row>
@@ -25,10 +26,12 @@
 
 <script>
 import axios from "axios";
+import idea from "../assets/images/idea.jpg";
 
 export default {
   data: function () {
     return {
+      idea,
       services: [],
     };
   },
