@@ -1,9 +1,8 @@
 <template>
   <v-app id="app">
-    <v-card class="overflow-hidden">
+    <v-card class="overflow-hidden" color="basil">
       <v-app-bar
         absolute
-        color="#f9f0f1"
         dark
         shrink-on-scroll
         prominent
@@ -18,13 +17,11 @@
         <template v-slot:extension>
           <v-tabs
             centered
-            background-color="#d0d2e4"
-            color="#0c1e36"
+            background-color="transparent"
             v-model="model"
             align-with-title
           >
             <v-tab
-              color="#0c1e36"
               exact
               v-for="i in items"
               :key="i.id"
