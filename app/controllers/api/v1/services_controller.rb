@@ -1,6 +1,6 @@
 class Api::V1::ServicesController < ApiController
   def index
-    services = Service.select(:title, :description, :image)
+    services = Service.select(:id, :title, :description, :image)
     render json: services
   end
 
