@@ -12,7 +12,7 @@
       >
         <v-divider />
         <a ref="/">
-          <v-img max-height="70" max-width="70" src="assets/tomoyo"></v-img>
+          <v-img max-height="70" max-width="70" :src="tomoyo"></v-img>
         </a>
         <v-spacer></v-spacer>
         <template v-slot:extension>
@@ -46,9 +46,11 @@
 </template>
 <script>
 import axios from "axios";
+import tomoyo from "../assets/images/tomoyo.png";
 export default {
   data: function () {
     return {
+      tomoyo,
       services: [],
       about: [],
       items: ["about", "service", "contact"],

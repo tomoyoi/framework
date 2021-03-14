@@ -15,10 +15,12 @@
 
 <script>
 import axios from "axios";
+import profile from "../assets/images/profile.jpg";
 
 export default {
   data: function () {
     return {
+      profile,
       about: [],
     };
   },

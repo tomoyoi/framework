@@ -26,7 +26,7 @@
     <p class="margin-120 padding-30">Profile</p>
     <v-row>
       <v-col sm="4">
-        <v-img class="rounded-circle" src="assets/profile"></v-img>
+        <v-img class="rounded-circle" :src="profile"></v-img>
       </v-col>
       <v-col sm="1"></v-col>
       <v-col class="text-left" sm="7">
@@ -49,9 +49,12 @@
 </template>
 <script>
 import axios from "axios";
+import profile from "../assets/images/profile.jpg";
+
 export default {
   data: function () {
     return {
+      profile,
       services: [],
       about: [],
       items: ["about", "service", "contact"],
