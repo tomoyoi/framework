@@ -45,6 +45,7 @@ export default {
     axios
       .get("/api/v1/services.json")
       .then((response) => (this.services = response.data));
+      console.log(response.data)
   },
 };
 </script>
