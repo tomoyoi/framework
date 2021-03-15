@@ -1,1 +1,1 @@
-json.services services
+json.services @services
