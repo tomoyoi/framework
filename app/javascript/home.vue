@@ -66,7 +66,9 @@ export default {
     axios
       .get("/api/v1/services")
       .then((response) => {
-        (this.services = response.data)
+        this.services = response.data
+        console.log("aaa");
+        console.log(this.services);
       })
       .catch((err) => {
         console.log(err);
