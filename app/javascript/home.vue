@@ -68,7 +68,7 @@ export default {
       .then((response) => {
         this.services = response.data
         console.log("aaa");
-        console.log(this.services);
+        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -76,8 +76,6 @@ export default {
     axios
       .get("/api/v1/owners")
       .then((response) => (this.about = response.data));
-      console.log("aaa");
-      console.log(this.about);
   },
 };
 </script>
