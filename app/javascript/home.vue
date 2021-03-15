@@ -8,7 +8,6 @@
       <v-container fluid style="min-height: 434px">
         <v-row>
           <v-col cols="6" v-for="i in services" :key="i.id">
-            <div>{{i.id}}</div>
             <v-card>
               <v-card-title class="headline font-weight-bold justify-center">{{
                 i.title
@@ -66,7 +65,12 @@ export default {
   mounted() {
     axios
       .get("/api/v1/services")
-      .then((response) => (this.services = response.data));
+      .then((response) => {
+        (this.services = response.data)
+      })
+      .catch((err) => {
+        console.log(err);
+      })
     axios
       .get("/api/v1/owners")
       .then((response) => (this.about = response.data));
