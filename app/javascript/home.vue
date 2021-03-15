@@ -7,7 +7,7 @@
       <p class="margin-120">Service</p>
       <v-container fluid style="min-height: 434px">
         <v-row>
-          <v-col cols="6" v-for="i, index in services" :key="index">
+          <v-col cols="6" v-for="i, index in tasks" :key="index">
             <v-card>
               <v-card-title class="headline font-weight-bold justify-center">{{
                 i.title
@@ -56,17 +56,16 @@ export default {
     return {
       profile,
       idea,
-      services: [],
+      tasks: [],
       about: [],
-      items: ["about", "service", "contact"],
       model: "tab-2",
     };
   },
   mounted() {
     axios
-      .get("/api/v1/services")
+      .get("/api/v1/tasks")
       .then((response) => {
-        this.services = response.data
+        this.tasks = response.data
       })
       .catch((err) => {
         console.log(err);

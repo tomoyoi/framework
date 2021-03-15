@@ -6,14 +6,14 @@
     <p class="margin-120">Service</p>
     <v-container fluid style="min-height: 434px">
       <v-row>
-        <v-col cols="6" v-for="i, index in services" :key="index">
+        <v-col cols="6" v-for="task, index in tasks" :key="task.id">
           <v-card>
             <v-card-title class="headline font-weight-bold justify-center">{{
-              i.title
+              task.title
             }}</v-card-title>
-            <v-img :src="i.image"></v-img>
+            <v-img :src="images[index]"></v-img>
             <v-card-text class="font-weight-bold text--primary text-center">{{
-              i.description
+              task.description
             }}</v-card-text>
           </v-card>
         </v-col>
@@ -36,15 +36,16 @@ export default {
       idea,
       coding,
       design,
-      management,
       planning,
-      services: [],
+      management,
+      images: [design, coding, planning, management],
+      tasks: [],
     };
   },
   mounted() {
     axios
-      .get("/api/v1/services")
-      .then((response) => (this.services = response.data));
+      .get("/api/v1/tasks")
+      .then((response) => (this.tasks = response.data));
   },
 };
 </script>

@@ -19,7 +19,7 @@ export default new Router({
     {
       path: "/service",
       name: "service",
-      component: () => import("../../service"),
+      component: () => import("../../task"),
     },
     {
       path: "/contact",
