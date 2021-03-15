@@ -42,7 +42,6 @@
   </v-app>
 </template>
 <script>
-import axios from "axios";
 import tomoyo from "../assets/images/tomoyo.png";
 export default {
   data: function () {
