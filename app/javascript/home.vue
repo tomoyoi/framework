@@ -64,11 +64,9 @@ export default {
   },
   mounted() {
     axios
-      .get("/api/v1/services")
+      .get("/api/v1/services.json")
       .then((response) => {
         this.services = response.data
-        console.log("aaa");
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
