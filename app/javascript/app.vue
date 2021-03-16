@@ -3,15 +3,15 @@
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
-        dark
         shrink-on-scroll
         prominent
         elevate-on-scroll
+        centered
         scroll-target="#scrolling-techniques"
       >
         <v-divider />
         <a ref="/">
-          <v-img max-height="100" max-width="100" :src="tomoyo"></v-img>
+          <v-img height="120" max-width="150" :src="tomoyo"></v-img>
         </a>
         <v-spacer></v-spacer>
         <template v-slot:extension>
@@ -55,6 +55,9 @@ export default {
 };
 </script>
 <style scope>
+#app {
+  font-family: 'PT Serif', serif;
+}
 .padding-80 {
   padding: 80px 0;
 }
