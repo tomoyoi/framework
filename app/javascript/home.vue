@@ -7,14 +7,14 @@
       <p class="margin-120">Service</p>
       <v-container fluid style="min-height: 434px">
         <v-row>
-          <v-col cols="6" v-for="i, index in tasks" :key="index">
+          <v-col cols="6" v-for="task, index in tasks" :key="task.id">
             <v-card>
               <v-card-title class="headline font-weight-bold justify-center">{{
-                i.title
+                task.title
               }}</v-card-title>
-              <v-img :src="i.image"></v-img>
+              <v-img :src="images[index]"></v-img>
               <v-card-text class="font-weight-bold text--primary text-center">{{
-                i.description
+                task.description
               }}</v-card-text>
             </v-card>
           </v-col>
@@ -50,12 +50,21 @@
 import axios from "axios";
 import profile from "../assets/images/profile.jpg";
 import idea from "../assets/images/idea.jpg";
+import coding from "../assets/images/coding.jpg";
+import design from "../assets/images/design.jpg";
+import management from "../assets/images/management.jpg";
+import planning from "../assets/images/planning.jpg";
 
 export default {
   data: function () {
     return {
       profile,
       idea,
+      coding,
+      design,
+      planning,
+      management,
+      images: [design, coding, planning, management],
       tasks: [],
       about: [],
       model: "tab-2",
