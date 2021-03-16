@@ -67,7 +67,6 @@ export default {
       images: [design, coding, planning, management],
       tasks: [],
       about: [],
-      model: "tab-2",
     };
   },
   mounted() {

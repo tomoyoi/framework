@@ -45,7 +45,12 @@ export default {
   mounted() {
     axios
       .get("/api/v1/tasks")
-      .then((response) => (this.tasks = response.data));
+      .then((response) => {
+        this.tasks = response.data
+      })
+      .catch((err) => {
+        console.log(err);
+      })
   },
 };
 </script>
