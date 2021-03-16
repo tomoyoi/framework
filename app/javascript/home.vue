@@ -12,6 +12,7 @@
               <v-card-title class="headline font-weight-bold justify-center">{{
                 task.title
               }}</v-card-title>
+              <div>{{images[index]}}</div>
               <v-img :src="images[index]"></v-img>
               <v-card-text class="font-weight-bold text--primary text-center">{{
                 task.description
