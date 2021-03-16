@@ -6,7 +6,6 @@
         shrink-on-scroll
         prominent
         elevate-on-scroll
-        centered
         scroll-target="#scrolling-techniques"
       >
         <v-divider />
@@ -16,7 +15,6 @@
         <v-spacer></v-spacer>
         <template v-slot:extension>
           <v-tabs
-            centered
             background-color="transparent"
             v-model="model"
             align-with-title
