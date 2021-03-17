@@ -1,6 +1,6 @@
 <template>
   <div align="center">
-    <v-card flat max-width="50%">
+    <v-card flat max-width="90%">
       <p class="margin-150">Contact</p>
       <p class="small">
         制作の依頼・ご相談などお気軽にお問い合わせくださいませ！

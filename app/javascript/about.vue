@@ -2,11 +2,10 @@
   <div class="margin-150">
     <p class="text-center margin-120">Profile</p>
     <v-row>
-      <v-col sm="4">
-        <v-img class="rounded-circle" :src="profile"></v-img>
+      <v-col xs="12" sm="12" md="4">
+        <v-img class="rounded-circle mx-5" :src="profile"></v-img>
       </v-col>
-      <v-col sm="1"></v-col>
-      <v-col class="text-left" sm="7">
+      <v-col class="text-left mx-5" xs="12" sm="12" md="7">
         <span v-html="about.comment"></span>
       </v-col>
     </v-row>

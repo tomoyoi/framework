@@ -6,7 +6,7 @@
     <p class="margin-120">Service</p>
     <v-container fluid style="min-height: 434px">
       <v-row>
-        <v-col cols="6" v-for="task, index in tasks" :key="task.id">
+        <v-col xs="12" sm="6" md="6" v-for="task, index in tasks" :key="task.id">
           <v-card>
             <v-card-title class="headline font-weight-bold justify-center">{{
               task.title

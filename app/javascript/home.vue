@@ -7,7 +7,7 @@
       <p class="margin-120">Service</p>
       <v-container fluid style="min-height: 434px">
         <v-row>
-          <v-col cols="6" v-for="task, index in tasks" :key="task.id">
+          <v-col xs="12" sm="6" md="6" v-for="task, index in tasks" :key="task.id">
             <v-card>
               <v-card-title class="headline font-weight-bold justify-center">{{
                 task.title
@@ -24,11 +24,10 @@
     <div>
       <p class="margin-120 padding-30">Profile</p>
       <v-row>
-        <v-col sm="4">
-          <v-img class="rounded-circle" :src="profile"></v-img>
+        <v-col xs="12" sm="12" md="4">
+          <v-img class="rounded-circle mx-5" :src="profile"></v-img>
         </v-col>
-        <v-col sm="1"></v-col>
-        <v-col class="text-left" sm="7">
+        <v-col class="text-left mx-5" xs="12" sm="12" md="7">
           <span v-html="about.comment"></span>
         </v-col>
       </v-row>
