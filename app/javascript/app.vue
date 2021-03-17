@@ -8,15 +8,14 @@
         elevate-on-scroll
         scroll-target="#scrolling-techniques"
       >
-        <v-divider />
+        <v-spacer />
         <a ref="/">
-          <v-img height="120" max-width="150" :src="tomoyo"></v-img>
+          <v-img height="50" max-width="100" :src="tomoyo"></v-img>
         </a>
-        <v-spacer></v-spacer>
+        <v-spacer />
         <template v-slot:extension>
           <v-tabs
             background-color="transparent"
-            v-model="model"
             align-with-title
           >
             <v-tab
@@ -47,7 +46,6 @@ export default {
       tomoyo,
       about: [],
       items: ["about", "service", "contact"],
-      model: "tab-2",
     };
   },
 };
