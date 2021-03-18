@@ -1,41 +1,39 @@
 <template>
   <v-app id="app">
-    <v-card class="overflow-hidden">
-      <v-app-bar
-        absolute
-        shrink-on-scroll
-        prominent
-        elevate-on-scroll
-        scroll-target="#scrolling-techniques"
-      >
-        <v-spacer />
-        <a ref="/">
-          <v-img height="50" max-width="100" :src="tomoyo"></v-img>
-        </a>
-        <v-spacer />
-        <template v-slot:extension>
-          <v-tabs
-            background-color="transparent"
-            align-with-title
-          >
-            <v-tab
-              exact
-              v-for="i in items"
-              :key="i.id"
-              :to="{ name: i }"
-              >{{ i }}
-            </v-tab>
-          </v-tabs>
-        </template>
-      </v-app-bar>
-      <v-sheet id="scrolling-techniques" class="overflow-y-auto" style="height: 1200px;">
-        <v-container style="height: 500px;">
-          <div class="padding-80">
-            <router-view></router-view>
-          </div>
-        </v-container>
-      </v-sheet>
-    </v-card>
+    <v-app-bar
+      absolute
+      shrink-on-scroll
+      prominent
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques"
+    >
+      <v-spacer />
+      <a ref="/">
+        <v-img height="50" max-width="100" :src="tomoyo"></v-img>
+      </a>
+      <v-spacer />
+      <template v-slot:extension>
+        <v-tabs
+          background-color="transparent"
+          align-with-title
+        >
+          <v-tab
+            exact
+            v-for="i in items"
+            :key="i.id"
+            :to="{ name: i }"
+            >{{ i }}
+          </v-tab>
+        </v-tabs>
+      </template>
+    </v-app-bar>
+    <v-sheet id="scrolling-techniques" class="overflow-y-auto">
+      <v-container style="height: 700px;">
+        <div class="padding-80">
+          <router-view></router-view>
+        </div>
+      </v-container>
+    </v-sheet>
   </v-app>
 </template>
 <script>
