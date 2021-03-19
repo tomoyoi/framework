@@ -12,6 +12,9 @@
         <v-img height="50" max-width="100" :src="tomoyo"></v-img>
       </a>
       <v-spacer />
+      <v-btn icon href="https://www.instagram.com/healthy_life_log/" target="_blank">
+        <v-img height="25" max-width="25" :src="instagram"></v-img>
+      </v-btn>
       <template v-slot:extension>
         <v-tabs
           background-color="transparent"
@@ -38,10 +41,12 @@
 </template>
 <script>
 import tomoyo from "../assets/images/tomoyo.png";
+import instagram from "../assets/images/instagram.png";
 export default {
   data: function () {
     return {
       tomoyo,
+      instagram,
       about: [],
       items: ["about", "service", "contact"],
     };
