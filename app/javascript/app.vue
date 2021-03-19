@@ -8,8 +8,8 @@
       scroll-target="#scrolling-techniques"
     >
       <v-spacer />
-      <a ref="/">
-        <v-img height="50" max-width="100" :src="tomoyo"></v-img>
+      <a class="padding-25" ref="/">
+        <v-img  height="50" max-width="100" :src="tomoyo"></v-img>
       </a>
       <v-spacer />
       <v-btn icon href="https://www.instagram.com/healthy_life_log/" target="_blank">
@@ -70,5 +70,8 @@ export default {
 }
 .padding-30 {
   padding-bottom: 30px;
+}
+.padding-25 {
+  padding-left: 25px;
 }
 </style>
