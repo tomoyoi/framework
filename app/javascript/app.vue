@@ -12,6 +12,9 @@
         <v-img  height="50" max-width="100" :src="tomoyo"></v-img>
       </a>
       <v-spacer />
+      <v-btn icon href="https://github.com/tomoyoi" target="_blank">
+        <v-img height="25" max-width="25" :src="github"></v-img>
+      </v-btn>
       <v-btn icon href="https://www.instagram.com/healthy_life_log/" target="_blank">
         <v-img height="25" max-width="25" :src="instagram"></v-img>
       </v-btn>
@@ -42,11 +45,13 @@
 <script>
 import tomoyo from "../assets/images/tomoyo.png";
 import instagram from "../assets/images/instagram.png";
+import github from "../assets/images/github.png";
 export default {
   data: function () {
     return {
       tomoyo,
       instagram,
+      github,
       about: [],
       items: ["about", "service", "contact"],
     };
