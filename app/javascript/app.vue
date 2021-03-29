@@ -8,7 +8,7 @@
       scroll-target="#scrolling-techniques"
     >
       <v-spacer />
-      <a class="padding-25" ref="/">
+      <a class="padding-left-80" ref="/">
         <v-img  height="50" max-width="100" :src="tomoyo"></v-img>
       </a>
       <v-spacer />
@@ -76,7 +76,7 @@ export default {
 .padding-30 {
   padding-bottom: 30px;
 }
-.padding-25 {
-  padding-left: 25px;
+.padding-left-80 {
+  padding-left: 80px;
 }
 </style>
